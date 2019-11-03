@@ -43,7 +43,7 @@ app.get('/about', (req,res) => {
 
 app.get('/weather',(req,res) => {
 
-    geocode('Barcelona', (error,{latitude,longitude,place} = {}) => {
+    geocode(req.query.address, (error,{latitude,longitude,place} = {}) => {
         if (error){
             return res.send({
                 error

@@ -7,8 +7,19 @@
     <body>
             <h1>{{title}}</h1>
             {{>header}}
+
+            <form>
+                <input placeholder="Location">
+                <button id="submit" value="check" style="top:80%; left:5%; width:40%;">Search</button>
+            </form>
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+
             {{>footer}}
 
+        <script src="./js/app.js"></script>
+        
     </body>
 
 </html>
